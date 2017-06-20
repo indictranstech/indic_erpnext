@@ -34,7 +34,7 @@ class LeaveApplication(Document):
 		self.validate_dates()
 		self.validate_balance_leaves()
 		self.validate_leave_overlap()
-		self.validate_max_days()
+		# self.validate_max_days()
 		self.show_block_day_warning()
 		self.validate_block_days()
 		self.validate_salary_processed_days()

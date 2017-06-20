@@ -34,31 +34,28 @@ def execute(filters=None):
 	return columns, data, None, chart
 
 def get_net_profit_loss(income, expense, period_list, company):
-	total = 0
-	net_profit_loss = {
-		"account_name": "'" + _("Net Profit / Loss") + "'",
-		"account": "'" + _("Net Profit / Loss") + "'",
-		"warn_if_negative": True,
-		"currency": frappe.db.get_value("Company", company, "default_currency")
-	}
+	if income and expense:
+		total = 0
+		net_profit_loss = {
+			"account_name": "'" + _("Net Profit / Loss") + "'",
+			"account": "'" + _("Net Profit / Loss") + "'",
+			"warn_if_negative": True,
+			"currency": frappe.db.get_value("Company", company, "default_currency")
+		}
 
-	has_value = False
+		has_value = False
 
-	for period in period_list:
-		total_income = flt(income[-2][period.key], 3) if income else 0
-		total_expense = flt(expense[-2][period.key], 3) if expense else 0
+		for period in period_list:
+			net_profit_loss[period.key] = flt(income[-2][period.key] - expense[-2][period.key], 3)
 
-		net_profit_loss[period.key] = total_income - total_expense
+			if net_profit_loss[period.key]:
+				has_value=True
 
-		if net_profit_loss[period.key]:
-			has_value=True
+			total += flt(net_profit_loss[period.key])
+			net_profit_loss["total"] = total
 
-		total += flt(net_profit_loss[period.key])
-		net_profit_loss["total"] = total
-
-	if has_value:
-		return net_profit_loss
-
+		if has_value:
+			return net_profit_loss
 
 def get_chart_data(filters, columns, income, expense, net_profit_loss):
 	x_intervals = ['x'] + [d.get("label") for d in columns[2:]]

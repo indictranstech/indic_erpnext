@@ -1,6 +1,5 @@
 {
  "allow_copy": 0, 
- "allow_guest_to_view": 0, 
  "allow_import": 0, 
  "allow_rename": 0, 
  "autoname": "naming_series:", 
@@ -13,7 +12,6 @@
  "editable_grid": 0, 
  "fields": [
   {
-   "allow_bulk_edit": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -43,7 +41,6 @@
    "unique": 0
   }, 
   {
-   "allow_bulk_edit": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -70,11 +67,10 @@
    "report_hide": 0, 
    "reqd": 1, 
    "search_index": 0, 
-   "set_only_once": 1, 
+   "set_only_once": 0, 
    "unique": 0
   }, 
   {
-   "allow_bulk_edit": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -107,7 +103,6 @@
    "unique": 0
   }, 
   {
-   "allow_bulk_edit": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -141,7 +136,6 @@
    "unique": 0
   }, 
   {
-   "allow_bulk_edit": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -173,7 +167,6 @@
    "unique": 0
   }, 
   {
-   "allow_bulk_edit": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -204,7 +197,6 @@
    "width": "50%"
   }, 
   {
-   "allow_bulk_edit": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -238,7 +230,6 @@
    "unique": 0
   }, 
   {
-   "allow_bulk_edit": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -270,7 +261,6 @@
    "unique": 0
   }, 
   {
-   "allow_bulk_edit": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -302,7 +292,6 @@
    "unique": 0
   }, 
   {
-   "allow_bulk_edit": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -334,7 +323,6 @@
    "unique": 0
   }, 
   {
-   "allow_bulk_edit": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -366,7 +354,6 @@
    "unique": 0
   }, 
   {
-   "allow_bulk_edit": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -397,7 +384,6 @@
    "unique": 0
   }, 
   {
-   "allow_bulk_edit": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -428,7 +414,6 @@
    "unique": 0
   }, 
   {
-   "allow_bulk_edit": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -457,7 +442,6 @@
    "unique": 0
   }, 
   {
-   "allow_bulk_edit": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -487,7 +471,6 @@
    "unique": 0
   }, 
   {
-   "allow_bulk_edit": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -517,7 +500,6 @@
    "unique": 0
   }, 
   {
-   "allow_bulk_edit": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -549,7 +531,6 @@
    "unique": 0
   }, 
   {
-   "allow_bulk_edit": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -578,7 +559,6 @@
    "unique": 0
   }, 
   {
-   "allow_bulk_edit": 0, 
    "allow_on_submit": 0, 
    "bold": 0, 
    "collapsible": 0, 
@@ -611,18 +591,18 @@
    "width": "150px"
   }
  ], 
- "has_web_view": 0, 
  "hide_heading": 0, 
  "hide_toolbar": 0, 
  "icon": "fa fa-thumbs-up", 
  "idx": 1, 
  "image_view": 0, 
  "in_create": 0, 
+ "in_dialog": 0, 
  "is_submittable": 1, 
  "issingle": 0, 
  "istable": 0, 
  "max_attachments": 0, 
- "modified": "2017-06-13 14:28:49.914065", 
+ "modified": "2017-02-17 16:55:49.559295", 
  "modified_by": "Administrator", 
  "module": "HR", 
  "name": "Appraisal", 
